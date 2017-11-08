@@ -44,7 +44,10 @@
 .nav li>a:hover{
     color:#07111b;
 }
-ul.unlogin li>a:hover{
+ul.unlogin li>a.hover{
+    color:red;
+}
+ul.unlogin li>a.hover>i{
     color:red;
 }
 .searchArea{
@@ -89,6 +92,44 @@ ul.unlogin li>a:hover{
     font-size: 14px;
     color:#71777d;
 }
+.unlogin>li{
+    position: relative;
+}
+.unlogin>li>div.appload-wrap{
+    display: none;
+    position:absolute;
+    top:70px;
+    right:0;
+    width:256px;
+    height:108px;
+    padding:22px 24px;
+    background-color: #fff;
+    z-index: 100;
+}
+.unlogin>li>div.appload-wrap>img{
+    width:108px;
+    height:108px;
+}
+.unlogin>li>div.appload-wrap>div>a{
+    display: block;
+    width:132px;
+    height:36px;
+    border-radius: 18px;
+    background-color: #4d555d;
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 10px;
+}
+.unlogin>li>div.appload-wrap>div>a:hover{
+    background-color: #07111B;
+}
+.unlogin>li>div.appload-wrap>div>a>i{
+    font-size: 16px;
+    color:#fff;
+    margin-right: 10px;
+}
 .unlogin>li>a.cart{
     border:1px solid #ccc;
     border-radius: 20px;
@@ -99,10 +140,36 @@ ul.unlogin li>a:hover{
 .unlogin>li>a.cart>i{
     width:16px;
     height:16px;
-    background-image: url('../img/cart.png');
+    /*background-image: url('../img/cart.png');*/
     position:absolute;
-    top:6px;
+    top:8px;
     left:14px;
+}
+.unlogin>li>div.my-cart{
+    display: none;
+    position: absolute;
+    top:70px;
+    right:0;
+    width:326px;
+    height:412px;
+    background-color: #fff;
+    padding:0 12px;
+    z-index: 100;
+}
+.unlogin>li>.my-cart>.cart-title{
+    padding:20px 12px;
+    border-bottom: 1px solid #d9dde1;
+    overflow: hidden;
+}
+.my-cart>.cart-title>h2{
+    font-size: 16px;
+    color:#07111b;
+    line-height: 16px;
+}
+.my-cart>.cart-title>h5{
+    font-size: 12px;
+    color:#93999f;
+    line-height: 16px;
 }
 /*main*/
 .main{
@@ -229,6 +296,10 @@ ul.unlogin li>a:hover{
 .submenu-bottom p{
     color:#07111b;
     margin-left:16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width:226px;
+    white-space: nowrap;
 }
 .submenu-bottom ul{
     color:#4d555d;

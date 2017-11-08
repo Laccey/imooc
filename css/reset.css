@@ -16,6 +16,16 @@ input{
     border-bottom:1px solid #ccc;
     padding:25px 0 15px;
 }
+button{
+    outline: 0;
+    border: 0;
+}
 .clear{
     clear:both;
+}
+.lf{
+    float: left;
+}
+.rf{
+    float: right;
 }
